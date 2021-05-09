@@ -1,0 +1,250 @@
+<html>
+	<head>
+		<title>Cosmic Club</title>
+		<style>
+			
+			header{
+    			background-color: rgb(7, 180, 233);
+    			text-align: center;
+    			padding: 10px;
+    			margin: 10px;
+
+			}
+
+			nav a{
+		    	text-decoration: none;
+		    	color: white;
+		    	text-align: center;
+		    	padding: 20px;
+		    	float: left;
+			}
+			nav{
+		    	background-color: black;
+		    	overflow: hidden;
+
+			}
+			nav a:hover{
+		    	color: tomato;
+			}
+			footer a{
+		    	text-decoration: none;
+		    	color: white;
+		    	text-align: center;
+		    	padding: 20px;
+		    	float: left;
+			}
+
+			footer{
+		    	overflow: hidden;
+		    	background-color: black;
+			}
+			footer a:hover{
+		    	color: rgb(19, 206, 59);
+			}
+			.motive{
+		    	background-color:cornsilk;
+		    	text-align: center;
+		    	font-family:cursive;
+			}
+
+
+			.container{
+		    	font-family: Verdana, Geneva, Tahoma, sans-serif;
+		    	border:rgb(62, 71, 207);
+		    	border-radius: 20px;
+		    	border-style:solid;
+		    	margin: 50px;
+		    	padding: 50px;
+		    	font-size: x-large;
+		    	background-color:rgb(147, 223, 236);
+		
+			}
+			.log-title{
+		    	text-align: center;
+		    	border-radius: 70px;
+		    	font-size:xx-large;
+		    	font-weight: 5000;
+
+		
+		
+			}
+
+			input[type="text"],
+			input[type="email"],
+			input[type="number"],
+			input[type="password"]{
+		    	width: 100%;
+		    	padding: 10px;
+		    	border: 1px solid #ccc;
+		    	border-radius: 5px;
+		    	margin: 10px;}
+
+
+	
+
+				button{
+		    	border: none;
+		    	background-color: rgb(15, 55, 233);
+		    	color: white;
+		    	padding: 10px;
+		    	border-radius: 100px;
+		    	width: 100%;
+		    	text-align: center;
+		    	cursor: pointer;
+		    	font-size: xx-large;
+		    	margin: 20px;
+				}
+		
+
+			
+				button:hover{
+			    background-color: tomato;
+			}
+
+
+
+		</style>
+	</head>
+
+	
+	<body>
+		<!--from here code for home page starts-->
+
+		<header>
+				<h1>
+					CosmicClub.com
+				</h1>
+		</header>
+		<nav>
+			<a href="#" target="_blank">Home</a>
+			<a href="#" target="_blank">Motive</a>
+			<a href="#" target="_blank">Login/Signup</a>
+			<a href="#" target="_blank">Help</a>
+		</nav>
+
+		<main>
+			<section>
+				<h1 style="background-color: yellowgreen; width: 20%; text-align: center; border-radius: 5%;">Motive</h1>
+				<p class="motive">
+					Our vision is to build a platform where local people can connect and meet locally  and how this is different from Facebook is that Facebook connect people globally and virtually but this is a place where local people can meet and perform their hobbies with each other. Wheather it is yoga or mountaineering or any sports, they can perform it together with the help of this platform. By this way it can help people overcome loneliness or depression.
+				</p>
+			</section>
+
+			<section>
+				<h1 style="background-color:rgba(255, 255, 0, 0.719);text-align: center; padding: 20px; border-radius: 50%;">Register Now And Explore The Surrounding</h1>
+			</section>
+		</main>
+
+		<!--from here code for signup page starts-->
+
+		<div class="theme-layout"> 
+			<div class="container-fluid pdng0">
+				<div class="row merged">
+					<div class="offset-md-3 col-md-6">
+						<div class="login-reg-bg">
+							<div class="log-reg-area sign">
+								<div class="container">
+									<h2 class="log-title">SIGNUP</h2>
+
+									<form onsubmit="return doRegister	(this);">
+									<div class="form-group">
+										<label 	class="control-label">Full 	Name</label>
+										<input type="text" required 	name="name" />
+										<i class="mtrl-select"></i>
+									</div>
+
+									<div class="form-group">
+										<label 	class="control-label">User 	Name</label>
+										<input type="text" required 	name="username" />
+										<i class="mtrl-select"></i>
+									</div>
+
+									<div class="form-group">
+										<label 	class="control-label">Email</	label>
+										<input type="email" required 	name="email" />
+										<i class="mtrl-select"></i>
+									</div>
+
+									<div class="form-group"><label>Password</label>
+										<input type="password" 	required name="password">
+										<i class="mtrl-select"></i>
+									</div>
+											<div class="form-radio">
+												<div class="radio">
+													<label>
+														<input 	type="radio" 				name="gender" 					value="Male" 	checked />
+														<i 	class="check-b	ox"></i> Male
+													</label>
+												</div>
+
+												<div class="radio">
+													<label>
+														<input 	type="radio" 	name="gender" 	value="Female"	 />
+														<i 	class="check-b	ox"></i> 	Female
+													</label>
+												</div>
+
+												<div class="radio">
+													<label>
+														<input 	type="radio" 	name="gender" 	value="Others"	 />
+														<i 	class="check-b	ox"></i> 	Others
+													</label>
+												</div>
+											</div>
+									<div class="submit-btns">
+										<button class="mtr-btn 		signup" name="submit" 	type="submit">
+											<span>Register</span>
+										</button>
+										
+									</div>
+										<a href="/login" 	target="_blank">Already have 	an account</a>
+								</form>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--here code of signup front page ends-->
+
+		<!--from here code of back end of signup page starts-->
+		<script>
+			function doRegister(form) {
+				form.submit.setAttribute("disabled", "disabled");
+				form.submit.innerHTML = "<span>Loading...</span>";
+
+				var ajax = new XMLHttpRequest();
+				ajax.open("POST", "/signup", true);
+
+				ajax.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+						form.submit.removeAttribute("disabled");
+						form.submit.innerHTML = "<span>Register</	span>";
+
+						var response = JSON.parse(this.responseText);
+						alert(response.message);
+
+						if (response.status == "success") {
+							window.location.href = "/login";
+						}
+					}
+				};
+
+				ajax.send(new FormData(form));
+				return false;
+			}
+		</script>
+		<!--from here code of back end of signup page ends-->
+	</body>
+
+	<footer>
+		<a href="#" target="_blank">Contact Us</a>
+		<a href="#" target="_blank">Terms Of Use</a>
+		<a href="#" target="_blank">FAQ</a>
+		<a href="#" target="_blank">&copy;2021CosmicClub</a>
+	</footer>
+
+	<!--from here code for home page ends-->
+
+</html>
